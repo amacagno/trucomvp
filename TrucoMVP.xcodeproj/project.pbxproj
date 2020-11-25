@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		BF1992D2256DEF080026D5F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992D1256DEF080026D5F5 /* AppDelegate.swift */; };
 		BF1992D4256DEF080026D5F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992D3256DEF080026D5F5 /* SceneDelegate.swift */; };
-		BF1992D6256DEF080026D5F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992D5256DEF080026D5F5 /* ViewController.swift */; };
+		BF1992D6256DEF080026D5F5 /* TrucoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992D5256DEF080026D5F5 /* TrucoViewController.swift */; };
 		BF1992D9256DEF080026D5F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1992D7256DEF080026D5F5 /* Main.storyboard */; };
 		BF1992DB256DEF0A0026D5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1992DA256DEF0A0026D5F5 /* Assets.xcassets */; };
 		BF1992DE256DEF0A0026D5F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1992DC256DEF0A0026D5F5 /* LaunchScreen.storyboard */; };
+		BF1992E8256DF8FE0026D5F5 /* TrucoViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992E7256DF8FE0026D5F5 /* TrucoViewDelegate.swift */; };
+		BF1992EB256DF9120026D5F5 /* TrucoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992EA256DF9120026D5F5 /* TrucoPresenter.swift */; };
+		BF1992EE256DF96C0026D5F5 /* TrucoPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992ED256DF96C0026D5F5 /* TrucoPlayerModel.swift */; };
+		BF1992F1256DF9DE0026D5F5 /* TrucoPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992F0256DF9DE0026D5F5 /* TrucoPlayerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF1992CE256DEF080026D5F5 /* TrucoMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrucoMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1992D1256DEF080026D5F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF1992D3256DEF080026D5F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF1992D5256DEF080026D5F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF1992D5256DEF080026D5F5 /* TrucoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucoViewController.swift; sourceTree = "<group>"; };
 		BF1992D8256DEF080026D5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF1992DA256DEF0A0026D5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF1992DD256DEF0A0026D5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF1992DF256DEF0A0026D5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1992E7256DF8FE0026D5F5 /* TrucoViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucoViewDelegate.swift; sourceTree = "<group>"; };
+		BF1992EA256DF9120026D5F5 /* TrucoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucoPresenter.swift; sourceTree = "<group>"; };
+		BF1992ED256DF96C0026D5F5 /* TrucoPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucoPlayerModel.swift; sourceTree = "<group>"; };
+		BF1992F0256DF9DE0026D5F5 /* TrucoPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucoPlayerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				BF1992D1256DEF080026D5F5 /* AppDelegate.swift */,
 				BF1992D3256DEF080026D5F5 /* SceneDelegate.swift */,
-				BF1992D5256DEF080026D5F5 /* ViewController.swift */,
+				BF1992D5256DEF080026D5F5 /* TrucoViewController.swift */,
 				BF1992D7256DEF080026D5F5 /* Main.storyboard */,
 				BF1992DA256DEF0A0026D5F5 /* Assets.xcassets */,
 				BF1992DC256DEF0A0026D5F5 /* LaunchScreen.storyboard */,
 				BF1992DF256DEF0A0026D5F5 /* Info.plist */,
+				BF1992E7256DF8FE0026D5F5 /* TrucoViewDelegate.swift */,
+				BF1992EA256DF9120026D5F5 /* TrucoPresenter.swift */,
+				BF1992ED256DF96C0026D5F5 /* TrucoPlayerModel.swift */,
+				BF1992F0256DF9DE0026D5F5 /* TrucoPlayerService.swift */,
 			);
 			path = TrucoMVP;
 			sourceTree = "<group>";
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF1992D6256DEF080026D5F5 /* ViewController.swift in Sources */,
+				BF1992D6256DEF080026D5F5 /* TrucoViewController.swift in Sources */,
+				BF1992E8256DF8FE0026D5F5 /* TrucoViewDelegate.swift in Sources */,
 				BF1992D2256DEF080026D5F5 /* AppDelegate.swift in Sources */,
 				BF1992D4256DEF080026D5F5 /* SceneDelegate.swift in Sources */,
+				BF1992EE256DF96C0026D5F5 /* TrucoPlayerModel.swift in Sources */,
+				BF1992F1256DF9DE0026D5F5 /* TrucoPlayerService.swift in Sources */,
+				BF1992EB256DF9120026D5F5 /* TrucoPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
