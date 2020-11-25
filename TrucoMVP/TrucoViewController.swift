@@ -46,24 +46,24 @@ class TrucoViewController: UIViewController {
     }
     
     @IBAction func onTouchPlusP1(_ sender: Any) {
-        self.trucoPresenter.updateScore(playerName: self.player1Label.text ?? "", points: 1)
+        self.trucoPresenter.updateScore(id: 0, points: 1)
     }
     
     @IBAction func onTouchPlusP2(_ sender: Any) {
-        self.trucoPresenter.updateScore(playerName: self.player2Label.text ?? "", points: 1)
+        self.trucoPresenter.updateScore(id: 1, points: 1)
     }
     
     @IBAction func onTouchMinusP1(_ sender: Any) {
-        self.trucoPresenter.updateScore(playerName: self.player1Label.text ?? "", points: -1)
+        self.trucoPresenter.updateScore(id: 0, points: -1)
     }
     
     @IBAction func onTouchMinusP2(_ sender: Any) {
-        self.trucoPresenter.updateScore(playerName: self.player2Label.text ?? "", points: -1)
+        self.trucoPresenter.updateScore(id: 1, points: -1)
     }
     
     @IBAction func onTouchRefresh(_ sender: Any) {
-        self.trucoPresenter.updateName(currentName: self.player1Label.text ?? "", newName: self.player1Field.text ?? "")
-        self.trucoPresenter.updateName(currentName: self.player2Label.text ?? "", newName: self.player2Field.text ?? "")
+        self.trucoPresenter.updateName(id: 0, newName: self.player1Field.text ?? "")
+        self.trucoPresenter.updateName(id: 1, newName: self.player2Field.text ?? "")
         self.player1Field.text = ""
         self.player2Field.text = ""
         self.view.endEditing(true)

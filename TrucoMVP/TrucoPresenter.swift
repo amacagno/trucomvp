@@ -19,27 +19,24 @@ internal class TrucoPresenter {
         self.trucoViewDelegate = delegate
     }
     
-    internal func updateScore(playerName: String, points: Int) {
-        self.trucoPlayerService.updatePlayerScore(name: playerName, points: points)
+    internal func updateScore(id: Int, points: Int) {
+        self.trucoPlayerService.updatePlayerScore(id: id, points: points)
+        let playerScore = self.trucoPlayerService.getPlayer(id: id)?.playerScore ?? 0
         
-        if let player = self.trucoPlayerService.getPlayer(name: playerName) {
-            if player.id == 0 {
-                self.trucoViewDelegate?.updatePlayerOneScore(newScore: String(player.playerScore))
-            } else {
-                self.trucoViewDelegate?.updatePlayerTwoScore(newScore: String(player.playerScore))
-            }
+        if id == 0 {
+            self.trucoViewDelegate?.updatePlayerOneScore(newScore: String(playerScore))
+        } else {
+            self.trucoViewDelegate?.updatePlayerTwoScore(newScore: String(playerScore))
         }
     }
     
-    internal func updateName(currentName: String, newName: String) {
-        self.trucoPlayerService.updatePlayerName(name: currentName, newName: newName)
+    internal func updateName(id: Int, newName: String) {
+        self.trucoPlayerService.updatePlayerName(id: id, newName: newName)
         
-        if let player = self.trucoPlayerService.getPlayer(name: newName) {
-            if player.id == 0 {
-                self.trucoViewDelegate?.updatePlayerOneName(newName: player.playerName)
-            } else {
-                self.trucoViewDelegate?.updatePlayerTwoName(newName: player.playerName)
-            }
+        if id == 0 {
+            self.trucoViewDelegate?.updatePlayerOneName(newName: newName)
+        } else {
+            self.trucoViewDelegate?.updatePlayerTwoName(newName: newName)
         }
     }
     

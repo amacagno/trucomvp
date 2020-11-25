@@ -15,20 +15,20 @@ internal class TrucoPlayerService {
         players.append(TrucoPlayerModel(id: 1, playerName: "Player 2", playerScore: 0))
     }
     
-    internal func getPlayer(name: String) -> TrucoPlayerModel? {
-        if let player = self.players.first(where: { $0.playerName == name } ) {
+    internal func getPlayer(id: Int) -> TrucoPlayerModel? {
+        if let player = self.players.first(where: { $0.id == id } ) {
             return player
         }
         
         return nil
     }
     
-    internal func updatePlayerScore(name: String, points: Int) {
-        self.players.first(where: { $0.playerName == name })?.playerScore += points
+    internal func updatePlayerScore(id: Int, points: Int) {
+        self.players.first(where: { $0.id == id })?.playerScore += points
     }
     
-    internal func updatePlayerName(name: String, newName: String) {
-        self.players.first(where: { $0.playerName == name })?.playerName = newName
+    internal func updatePlayerName(id: Int, newName: String) {
+        self.players.first(where: { $0.id == id })?.playerName = newName
     }
     
     internal func restart() {
