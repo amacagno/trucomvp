@@ -71,76 +71,78 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d81-pU-RIa" userLabel="Score P2 Label">
-                                <rect key="frame" x="317.5" y="232.5" width="49" height="96"/>
+                                <rect key="frame" x="317.5" y="202.5" width="49" height="96"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58R-xl-weM" userLabel="Score P1 Label">
-                                <rect key="frame" x="48" y="232.5" width="49" height="96"/>
+                                <rect key="frame" x="48" y="202.5" width="49" height="96"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar jugador 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v5D-d5-oo8">
-                                <rect key="frame" x="0.5" y="378.5" width="144" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar jugador 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ro-1R-P6A">
-                                <rect key="frame" x="269" y="378.5" width="146" height="34"/>
+                                <rect key="frame" x="110" y="371.5" width="194" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBw-5s-mhS">
-                                <rect key="frame" x="50" y="427.5" width="314" height="30"/>
+                                <rect key="frame" x="173" y="415.5" width="68" height="30"/>
                                 <state key="normal" title="Actualizar"/>
                                 <connections>
                                     <action selector="onTouchRefresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zD7-wp-M6i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cf0-N5-N3t">
-                                <rect key="frame" x="50" y="467.5" width="314" height="30"/>
+                                <rect key="frame" x="177.5" y="455.5" width="59" height="30"/>
                                 <state key="normal" title="Reiniciar"/>
                                 <connections>
                                     <action selector="onTouchRestart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52d-cr-nUr"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar jugador 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v5D-d5-oo8">
+                                <rect key="frame" x="110" y="327.5" width="194" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ro-1R-P6A" secondAttribute="trailing" constant="110" id="1Vg-wS-i9L"/>
+                            <constraint firstItem="2ro-1R-P6A" firstAttribute="centerX" secondItem="v5D-d5-oo8" secondAttribute="centerX" id="1gF-2N-khk"/>
                             <constraint firstItem="6qi-yr-CV0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="3vo-uf-gXI"/>
+                            <constraint firstItem="Cf0-N5-N3t" firstAttribute="top" secondItem="TBw-5s-mhS" secondAttribute="bottom" constant="10" id="433-3V-9Ml"/>
                             <constraint firstItem="d81-pU-RIa" firstAttribute="centerX" secondItem="EFe-Bx-wpa" secondAttribute="centerX" id="7hL-92-3Zy"/>
-                            <constraint firstItem="TBw-5s-mhS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8mH-La-HiL"/>
                             <constraint firstItem="hmL-nG-nyk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AYz-0h-1hM"/>
                             <constraint firstItem="dlp-xY-nz8" firstAttribute="top" secondItem="EFe-Bx-wpa" secondAttribute="bottom" constant="10" id="Ayp-Rw-zVK"/>
                             <constraint firstItem="egG-TE-R7U" firstAttribute="centerY" secondItem="sgI-gb-cOH" secondAttribute="centerY" id="Crd-K7-xbQ"/>
                             <constraint firstItem="EFe-Bx-wpa" firstAttribute="top" secondItem="6qi-yr-CV0" secondAttribute="top" id="DOv-8E-Aq1"/>
                             <constraint firstItem="sgI-gb-cOH" firstAttribute="top" secondItem="6qi-yr-CV0" secondAttribute="bottom" constant="10" id="DYI-M2-aSb"/>
                             <constraint firstItem="sgI-gb-cOH" firstAttribute="leading" secondItem="6qi-yr-CV0" secondAttribute="leading" id="Efn-om-2By"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cf0-N5-N3t" secondAttribute="trailing" constant="50" id="MST-gN-c9e"/>
+                            <constraint firstItem="Cf0-N5-N3t" firstAttribute="centerX" secondItem="TBw-5s-mhS" secondAttribute="centerX" id="HVY-yd-6fp"/>
                             <constraint firstItem="6qi-yr-CV0" firstAttribute="top" secondItem="hmL-nG-nyk" secondAttribute="bottom" constant="30" id="MpF-zs-8vO"/>
                             <constraint firstItem="egG-TE-R7U" firstAttribute="leading" secondItem="sgI-gb-cOH" secondAttribute="trailing" constant="5" id="O65-5L-A18"/>
                             <constraint firstItem="EFe-Bx-wpa" firstAttribute="width" secondItem="6qi-yr-CV0" secondAttribute="width" id="RcW-ye-5uj"/>
                             <constraint firstItem="hmL-nG-nyk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="T3O-gN-Mpc"/>
-                            <constraint firstItem="2ro-1R-P6A" firstAttribute="centerX" secondItem="EFe-Bx-wpa" secondAttribute="centerX" id="Tif-A7-Zdz"/>
                             <constraint firstItem="dlp-xY-nz8" firstAttribute="leading" secondItem="kRh-WB-1zc" secondAttribute="trailing" constant="5" id="TxP-Vw-0Ds"/>
-                            <constraint firstItem="v5D-d5-oo8" firstAttribute="top" secondItem="58R-xl-weM" secondAttribute="bottom" constant="50" id="TzZ-UL-V5K"/>
-                            <constraint firstItem="Cf0-N5-N3t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="W3x-TN-oeU"/>
                             <constraint firstItem="d81-pU-RIa" firstAttribute="centerY" secondItem="58R-xl-weM" secondAttribute="centerY" id="X7F-FI-FlK"/>
-                            <constraint firstItem="TBw-5s-mhS" firstAttribute="top" secondItem="v5D-d5-oo8" secondAttribute="bottom" constant="15" id="Y6S-2c-Xdc"/>
-                            <constraint firstItem="Cf0-N5-N3t" firstAttribute="top" secondItem="TBw-5s-mhS" secondAttribute="bottom" constant="10" id="YHC-PS-g7R"/>
-                            <constraint firstItem="v5D-d5-oo8" firstAttribute="centerX" secondItem="6qi-yr-CV0" secondAttribute="centerX" id="YeW-JO-onQ"/>
+                            <constraint firstItem="2ro-1R-P6A" firstAttribute="top" secondItem="v5D-d5-oo8" secondAttribute="bottom" constant="10" id="Zf3-8L-CVz"/>
+                            <constraint firstItem="2ro-1R-P6A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="bQ8-Tl-mOg"/>
+                            <constraint firstItem="TBw-5s-mhS" firstAttribute="top" secondItem="2ro-1R-P6A" secondAttribute="bottom" constant="10" id="bpl-aE-u5Y"/>
                             <constraint firstItem="58R-xl-weM" firstAttribute="centerX" secondItem="6qi-yr-CV0" secondAttribute="centerX" id="c9X-Ed-e2R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v5D-d5-oo8" secondAttribute="trailing" constant="110" id="dz5-ZG-EmC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hmL-nG-nyk" secondAttribute="trailing" constant="20" id="ezb-K2-BsO"/>
                             <constraint firstItem="EFe-Bx-wpa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6qi-yr-CV0" secondAttribute="trailing" constant="8" symbolic="YES" id="fKR-1P-D38"/>
-                            <constraint firstItem="58R-xl-weM" firstAttribute="top" secondItem="egG-TE-R7U" secondAttribute="bottom" constant="50" id="fgv-gl-g8b"/>
+                            <constraint firstItem="58R-xl-weM" firstAttribute="top" secondItem="egG-TE-R7U" secondAttribute="bottom" constant="20" id="fgv-gl-g8b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EFe-Bx-wpa" secondAttribute="trailing" constant="40" id="gvH-7J-mFP"/>
-                            <constraint firstItem="2ro-1R-P6A" firstAttribute="centerY" secondItem="v5D-d5-oo8" secondAttribute="centerY" id="ieI-4p-blc"/>
+                            <constraint firstItem="v5D-d5-oo8" firstAttribute="centerX" secondItem="hmL-nG-nyk" secondAttribute="centerX" id="h4P-FL-8qs"/>
+                            <constraint firstItem="v5D-d5-oo8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="mu3-WJ-Yml"/>
                             <constraint firstItem="dlp-xY-nz8" firstAttribute="centerY" secondItem="kRh-WB-1zc" secondAttribute="centerY" id="nex-Ki-II6"/>
+                            <constraint firstItem="TBw-5s-mhS" firstAttribute="centerX" secondItem="2ro-1R-P6A" secondAttribute="centerX" id="voh-Ga-lT4"/>
+                            <constraint firstItem="v5D-d5-oo8" firstAttribute="top" secondItem="hmL-nG-nyk" secondAttribute="bottom" constant="230" id="yOX-h3-ndC"/>
                             <constraint firstItem="dlp-xY-nz8" firstAttribute="trailing" secondItem="EFe-Bx-wpa" secondAttribute="trailing" id="yT6-8u-SyI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBw-5s-mhS" secondAttribute="trailing" constant="50" id="yYS-cO-dWA"/>
                         </constraints>
                     </view>
                     <connections>

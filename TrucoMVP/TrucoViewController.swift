@@ -22,6 +22,7 @@ class TrucoViewController: UIViewController {
         super.viewDidLoad()
         self.trucoPresenter.setDelegate(self)
         self.setupUI()
+        self.addGesture()
     }
     
     func setupUI() {
@@ -35,27 +36,38 @@ class TrucoViewController: UIViewController {
         self.scoreP2Label.textColor = .green
     }
     
+    func addGesture() {
+        let tapBackground = UITapGestureRecognizer(target: self, action: #selector(self.backgroundTapped(_:)))
+        self.view.addGestureRecognizer(tapBackground)
+    }
+    
+    @objc func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func onTouchPlusP1(_ sender: Any) {
-        self.trucoPresenter.updateScore(playerName: self.player1Label.text ?? "", type: "sum")
+        self.trucoPresenter.updateScore(playerName: self.player1Label.text ?? "", points: 1)
     }
     
     @IBAction func onTouchPlusP2(_ sender: Any) {
-        self.trucoPresenter.updateScore(playerName: self.player2Label.text ?? "", type: "sum")
+        self.trucoPresenter.updateScore(playerName: self.player2Label.text ?? "", points: 1)
     }
     
     @IBAction func onTouchMinusP1(_ sender: Any) {
-        self.trucoPresenter.updateScore(playerName: self.player1Label.text ?? "", type: "substract")
+        self.trucoPresenter.updateScore(playerName: self.player1Label.text ?? "", points: -1)
     }
     
     @IBAction func onTouchMinusP2(_ sender: Any) {
-        self.trucoPresenter.updateScore(playerName: self.player2Label.text ?? "", type: "substract")
+        self.trucoPresenter.updateScore(playerName: self.player2Label.text ?? "", points: -1)
     }
     
     @IBAction func onTouchRefresh(_ sender: Any) {
         self.trucoPresenter.updateName(currentName: self.player1Label.text ?? "", newName: self.player1Field.text ?? "")
         self.trucoPresenter.updateName(currentName: self.player2Label.text ?? "", newName: self.player2Field.text ?? "")
+        self.player1Field.text = ""
+        self.player2Field.text = ""
+        self.view.endEditing(true)
     }
-    
     
     @IBAction func onTouchRestart(_ sender: Any) {
         self.trucoPresenter.restart()

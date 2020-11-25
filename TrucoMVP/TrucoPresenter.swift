@@ -19,8 +19,8 @@ internal class TrucoPresenter {
         self.trucoViewDelegate = delegate
     }
     
-    internal func updateScore(playerName: String, type: String) {
-        self.trucoPlayerService.updatePlayerScore(name: playerName, score: sumOrSub(type))
+    internal func updateScore(playerName: String, points: Int) {
+        self.trucoPlayerService.updatePlayerScore(name: playerName, points: points)
         
         if let player = self.trucoPlayerService.getPlayer(name: playerName) {
             if player.id == 0 {
@@ -47,20 +47,5 @@ internal class TrucoPresenter {
         self.trucoPlayerService.restart()
         self.trucoViewDelegate?.updatePlayerOneScore(newScore: "0")
         self.trucoViewDelegate?.updatePlayerTwoScore(newScore: "0")
-    }
-    
-    private func sumOrSub(_ type: String) -> Int {
-        var update: Int
-        
-        switch type {
-        case "sum":
-            update = 1
-        case "substract":
-            update = -1
-        default:
-            update = 0
-        }
-        
-        return update
     }
 }

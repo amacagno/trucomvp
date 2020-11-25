@@ -23,8 +23,8 @@ internal class TrucoPlayerService {
         return nil
     }
     
-    internal func updatePlayerScore(name: String, score: Int) {
-        self.players.first(where: { $0.playerName == name })?.playerScore += score
+    internal func updatePlayerScore(name: String, points: Int) {
+        self.players.first(where: { $0.playerName == name })?.playerScore += points
     }
     
     internal func updatePlayerName(name: String, newName: String) {
