@@ -3,4 +3,54 @@
    uuid = "4F7662B2-E0B3-4199-8598-4D31D9A972D3"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6974F2C8-43BE-4752-9772-F54076FBBC37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrucoMVP/TrucoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "onTouchFaq(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6974F2C8-43BE-4752-9772-F54076FBBC37 - 9b94199d83ed409c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrucoMVP.TrucoViewController.onTouchFaq(Any) -&gt; ()"
+                  moduleName = "TrucoMVP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amacagno/Desktop/TrucoMVP/TrucoMVP/TrucoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "6974F2C8-43BE-4752-9772-F54076FBBC37 - 9b94199d83ed409c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrucoMVP.TrucoViewController.onTouchFaq(Any) -&gt; ()"
+                  moduleName = "TrucoMVP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amacagno/Desktop/TrucoMVP/TrucoMVP/TrucoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "851">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

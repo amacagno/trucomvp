@@ -72,6 +72,11 @@ class TrucoViewController: UIViewController {
     @IBAction func onTouchRestart(_ sender: Any) {
         self.trucoPresenter.restart()
     }
+    
+    @IBAction func onTouchFaq(_ sender: Any) {
+        let faqVC = self.storyboard?.instantiateViewController(identifier: "FaqViewController") as! FaqViewController
+        self.navigationController?.pushViewController(faqVC, animated: true)
+    }
 }
 
 extension TrucoViewController: TrucoViewDelegate {

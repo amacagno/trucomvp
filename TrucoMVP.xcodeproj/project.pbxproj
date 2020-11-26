@@ -17,6 +17,7 @@
 		BF1992EB256DF9120026D5F5 /* TrucoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992EA256DF9120026D5F5 /* TrucoPresenter.swift */; };
 		BF1992EE256DF96C0026D5F5 /* TrucoPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992ED256DF96C0026D5F5 /* TrucoPlayerModel.swift */; };
 		BF1992F1256DF9DE0026D5F5 /* TrucoPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1992F0256DF9DE0026D5F5 /* TrucoPlayerService.swift */; };
+		BFCA181B256F40FE001DCD0F /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA181A256F40FE001DCD0F /* FaqViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BF1992EA256DF9120026D5F5 /* TrucoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucoPresenter.swift; sourceTree = "<group>"; };
 		BF1992ED256DF96C0026D5F5 /* TrucoPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucoPlayerModel.swift; sourceTree = "<group>"; };
 		BF1992F0256DF9DE0026D5F5 /* TrucoPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrucoPlayerService.swift; sourceTree = "<group>"; };
+		BFCA181A256F40FE001DCD0F /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				BF1992EA256DF9120026D5F5 /* TrucoPresenter.swift */,
 				BF1992ED256DF96C0026D5F5 /* TrucoPlayerModel.swift */,
 				BF1992F0256DF9DE0026D5F5 /* TrucoPlayerService.swift */,
+				BFCA181A256F40FE001DCD0F /* FaqViewController.swift */,
 			);
 			path = TrucoMVP;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1992D6256DEF080026D5F5 /* TrucoViewController.swift in Sources */,
+				BFCA181B256F40FE001DCD0F /* FaqViewController.swift in Sources */,
 				BF1992E8256DF8FE0026D5F5 /* TrucoViewDelegate.swift in Sources */,
 				BF1992D2256DEF080026D5F5 /* AppDelegate.swift in Sources */,
 				BF1992D4256DEF080026D5F5 /* SceneDelegate.swift in Sources */,
